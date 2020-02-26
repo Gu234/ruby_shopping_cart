@@ -1,4 +1,4 @@
-# Ruby Interview
+# JavaScript Interview
 
 The fictional website www.great-fashion.com is an online store with the following products available for purchase:
 
@@ -15,13 +15,13 @@ When purchasing 2 or more of the Red Scarf, its price is reduced to £8.50.
 
 The check-out system can scan items in any order, and because promotions will change, it needs to be flexible regarding promotional rules.
 
-The interface to the checkout looks like this (shown in Ruby):
+The interface to the checkout looks like this (shown in JavaScript):
 
 ```
-co = Checkout.new(promotional_rules)
+co = new Checkout(promotionalRules)
 co.scan(item)
 co.scan(item)
-price = co.total
+price = co.total()
 ```
 
 Implement a simple checkout system that fulfills these requirements and the interface shown above.
